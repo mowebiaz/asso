@@ -12,10 +12,12 @@ const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
             {post.title}
             {post.slug && (
               <a href={`/posts/${post.slug.current}`}>
-                {post.slug.current}
+                clic
               </a>
             )}
-            </div> 
+{/*             {post.body && <PortableText value={post.body} />}
+ */}            
+ </div> 
 
         ))}
     </main>
